@@ -11,11 +11,11 @@
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="fixtures.html">Fixtures</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="members.html">Members</a></li>
+      <li><a href="#" onclick="comingSoon(event)">Fixtures</a></li>
+      <li><a href="#" onclick="comingSoon(event)">News</a></li>
+      <li><a href="#" onclick="comingSoon(event)">Gallery</a></li>
+      <li><a href="#" onclick="comingSoon(event)">Contact</a></li>
+      <li><a href="#" onclick="comingSoon(event)">Members</a></li>
     </ul>
   </nav>`;
 
@@ -30,11 +30,11 @@
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="fixtures.html">Fixtures &amp; Results</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="members.html">Members</a></li>
+          <li><span style="color:#555;font-size:0.9rem">Fixtures &amp; Results — coming soon</span></li>
+          <li><span style="color:#555;font-size:0.9rem">News — coming soon</span></li>
+          <li><span style="color:#555;font-size:0.9rem">Gallery — coming soon</span></li>
+          <li><span style="color:#555;font-size:0.9rem">Contact — coming soon</span></li>
+          <li><span style="color:#555;font-size:0.9rem">Members — coming soon</span></li>
         </ul>
       </div>
       <div>
@@ -62,3 +62,8 @@
   const links  = document.querySelector('.nav-links');
   if (toggle) toggle.addEventListener('click', () => links.classList.toggle('open'));
 })();
+
+function comingSoon(e) {
+  e.preventDefault();
+  alert('This page is coming soon!');
+}
