@@ -1,0 +1,63 @@
+{
+  "updated": "Not yet scraped — check back soon",
+  "year": 2026,
+  "leagues": [
+    {
+      "name": "Heath Town and District",
+      "web": "heathtown",
+      "teams": [
+        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity B", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Heath Town and District Over 50s",
+      "web": "heathtownover50s",
+      "teams": [
+        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity B", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity C", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Walsall Vets",
+      "web": "walsallvets",
+      "teams": [
+        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity C", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Wolverhampton Seniors",
+      "web": "wolverhamptonseniors",
+      "teams": [
+        { "name": "Willenhall Trinity A", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity C", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Cannock",
+      "web": "cannock",
+      "teams": [
+        { "name": "Willenhall Trinity", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Bilston LV",
+      "web": "bilston",
+      "teams": [
+        { "name": "Willenhall Trinity A", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] },
+        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    },
+    {
+      "name": "Wolverhampton and District Works",
+      "web": "wolverhamptonworks",
+      "teams": [
+        { "name": "Willenhall Trinity", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] }
+      ]
+    }
+  ]
+}
