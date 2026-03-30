@@ -1,62 +1,2988 @@
 {
-  "updated": "Not yet scraped — check back soon",
+  "updated": "30 Mar 2026 15:26",
   "year": 2026,
   "leagues": [
     {
       "name": "Heath Town and District",
-      "web": "heathtown",
       "teams": [
-        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity B", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Heath Town and District",
+          "name": "Willenhall Trinity A",
+          "division": 1,
+          "fixtures": [
+            {
+              "date": "Mon 27th Apr",
+              "opponent": "Short Heath Libs",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 13th Jul",
+              "opponent": "Pennfields B",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 11th May",
+              "opponent": "Pavilion Ces",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 20th Jul",
+              "opponent": "Essington",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 19th May",
+              "opponent": "M B Cheslyn Hay",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 27th Jul",
+              "opponent": "Short Heath Libs",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 1st Jun",
+              "opponent": "Hawkins Union Locks",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 3rd Aug",
+              "opponent": "Pavilion Ces",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 8th Jun",
+              "opponent": "Penn",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 10th Aug",
+              "opponent": "M B Cheslyn Hay",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 15th Jun",
+              "opponent": "Amery B",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 17th Aug",
+              "opponent": "Hawkins Union Locks",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 22nd Jun",
+              "opponent": "Pennfields Starting Gate",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 24th Aug",
+              "opponent": "Penn",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 29th Jun",
+              "opponent": "Pennfields B",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 7th Sep",
+              "opponent": "Amery B",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 6th Jul",
+              "opponent": "Essington",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 14th Sep",
+              "opponent": "Pennfields Starting Gate",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Amery B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Essington",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Hawkins Union Locks",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "M B Cheslyn Hay",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pavilion Ces",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Penn",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pennfields Starting Gate",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pennfields B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Short Heath Libs",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Heath Town and District",
+          "name": "Willenhall Trinity B",
+          "division": 2,
+          "fixtures": [
+            {
+              "date": "Mon 13th Apr",
+              "opponent": "Wombourne",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 13th Jul",
+              "opponent": "Wombourne",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 20th Apr",
+              "opponent": "Pennfields A",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 20th Jul",
+              "opponent": "Pennfields A",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 27th Apr",
+              "opponent": "Springvale A",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 27th Jul",
+              "opponent": "Springvale A",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 11th May",
+              "opponent": "Fordhouses B",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 3rd Aug",
+              "opponent": "Fordhouses B",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 18th May",
+              "opponent": "Willenhall Nordley",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 10th Aug",
+              "opponent": "Willenhall Nordley",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 1st Jun",
+              "opponent": "Amery A",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 17th Aug",
+              "opponent": "Amery A",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 8th Jun",
+              "opponent": "Woodfield ECC",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 24th Aug",
+              "opponent": "Woodfield ECC",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 15th Jun",
+              "opponent": "Springvale B",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 7th Sep",
+              "opponent": "Springvale B",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 22nd Jun",
+              "opponent": "Fordhouses A",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 14th Sep",
+              "opponent": "Fordhouses A",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 29th Jun",
+              "opponent": "Cheslyn Hay",
+              "venue": "Home"
+            },
+            {
+              "date": "Mon 21st Sep",
+              "opponent": "Cheslyn Hay",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 6th Jul",
+              "opponent": "Bye",
+              "venue": "Away"
+            },
+            {
+              "date": "Mon 28th Sep",
+              "opponent": "Bye",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Amery A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Cheslyn Hay",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Fordhouses A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Fordhouses B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pennfields A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Springvale A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Springvale B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Willenhall Nordley",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Willenhall Trinity B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Wombourne",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Woodfield ECC",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
       ]
     },
     {
       "name": "Heath Town and District Over 50s",
-      "web": "heathtownover50s",
       "teams": [
-        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity B", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity C", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Heath Town and District Over 50s",
+          "name": "Willenhall Trinity A",
+          "division": 1,
+          "fixtures": [
+            {
+              "date": "Fri 24th Apr",
+              "opponent": "Amery Unionist",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 10th Jul",
+              "opponent": "Amery Unionist",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 1st May",
+              "opponent": "Pavilion Ces A",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 17th Jul",
+              "opponent": "Pavilion Ces A",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 8th May",
+              "opponent": "Hamiltons A",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 24th Jul",
+              "opponent": "Hamiltons A",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 15th May",
+              "opponent": "Coseley Tavern",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 31st Jul",
+              "opponent": "Coseley Tavern",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 22nd May",
+              "opponent": "Penn B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 7th Aug",
+              "opponent": "Penn B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 29th May",
+              "opponent": "Woodfield A",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 14th Aug",
+              "opponent": "Woodfield A",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 5th Jun",
+              "opponent": "Short Heath Libs",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 21st Aug",
+              "opponent": "Short Heath Libs",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 12th Jun",
+              "opponent": "Pennfields A",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 28th Aug",
+              "opponent": "Pennfields A",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 19th Jun",
+              "opponent": "Penn A",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 4th Sep",
+              "opponent": "Penn A",
+              "venue": "Away"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Amery Unionist",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Coseley Tavern",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Hamiltons A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Pavilion Ces A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Penn A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Penn B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pennfields A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Short Heath Libs",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Willenhall Trinity A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Woodfield A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Heath Town and District Over 50s",
+          "name": "Willenhall Trinity B",
+          "division": 4,
+          "fixtures": [
+            {
+              "date": "Fri 24th Apr",
+              "opponent": "Pennfields D",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 10th Jul",
+              "opponent": "Pennfields D",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 1st May",
+              "opponent": "Pennfields E",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 17th Jul",
+              "opponent": "Pennfields E",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 8th May",
+              "opponent": "Fordhouses B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 24th Jul",
+              "opponent": "Fordhouses B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 15th May",
+              "opponent": "Essington C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 31st Jul",
+              "opponent": "Essington C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 22nd May",
+              "opponent": "Willenhall Trinity C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 7th Aug",
+              "opponent": "Willenhall Trinity C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 29th May",
+              "opponent": "Pavilion Ces C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 14th Aug",
+              "opponent": "Pavilion Ces C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 5th Jun",
+              "opponent": "Essington B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 21st Aug",
+              "opponent": "Essington B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 12th Jun",
+              "opponent": "Hamiltons D",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 28th Aug",
+              "opponent": "Hamiltons D",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 19th Jun",
+              "opponent": "Wombourne B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 4th Sep",
+              "opponent": "Wombourne B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 26th Jun",
+              "opponent": "Pennfields F",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 11th Sep",
+              "opponent": "Pennfields F",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 3rd Jul",
+              "opponent": "Pennfields C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 18th Sep",
+              "opponent": "Pennfields C",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Essington B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Essington C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Fordhouses B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hamiltons D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pavilion Ces C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Pennfields C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pennfields D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pennfields E",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Pennfields F",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Willenhall Trinity C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "12",
+              "club": "0",
+              "played": "Wombourne B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Heath Town and District Over 50s",
+          "name": "Willenhall Trinity C",
+          "division": 4,
+          "fixtures": [
+            {
+              "date": "Fri 24th Apr",
+              "opponent": "Pennfields F",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 10th Jul",
+              "opponent": "Pennfields F",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 1st May",
+              "opponent": "Hamiltons D",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 17th Jul",
+              "opponent": "Hamiltons D",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 8th May",
+              "opponent": "Pennfields E",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 24th Jul",
+              "opponent": "Pennfields E",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 15th May",
+              "opponent": "Fordhouses B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 31st Jul",
+              "opponent": "Fordhouses B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 22nd May",
+              "opponent": "Willenhall Trinity B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 7th Aug",
+              "opponent": "Willenhall Trinity B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 29th May",
+              "opponent": "Pennfields C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 14th Aug",
+              "opponent": "Pennfields C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 5th Jun",
+              "opponent": "Pavilion Ces C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 21st Aug",
+              "opponent": "Pavilion Ces C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 12th Jun",
+              "opponent": "Pennfields D",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 28th Aug",
+              "opponent": "Pennfields D",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 19th Jun",
+              "opponent": "Essington B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 4th Sep",
+              "opponent": "Essington B",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 26th Jun",
+              "opponent": "Essington C",
+              "venue": "Home"
+            },
+            {
+              "date": "Fri 11th Sep",
+              "opponent": "Essington C",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 3rd Jul",
+              "opponent": "Wombourne B",
+              "venue": "Away"
+            },
+            {
+              "date": "Fri 18th Sep",
+              "opponent": "Wombourne B",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Essington B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Essington C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Fordhouses B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hamiltons D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pavilion Ces C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Pennfields C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pennfields D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pennfields E",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Pennfields F",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Willenhall Trinity C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "12",
+              "club": "0",
+              "played": "Wombourne B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
       ]
     },
     {
       "name": "Walsall Vets",
-      "web": "walsallvets",
       "teams": [
-        { "name": "Willenhall Trinity A", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity C", "division": 4, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Walsall Vets",
+          "name": "Willenhall Trinity A",
+          "division": 1,
+          "fixtures": [
+            {
+              "date": "Tue 21st Apr",
+              "opponent": "Bridgtown",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 7th Jul",
+              "opponent": "Bridgtown",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 28th Apr",
+              "opponent": "Hawkins Sports",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 14th Jul",
+              "opponent": "Hawkins Sports",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 5th May",
+              "opponent": "Essington",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 21st Jul",
+              "opponent": "Essington",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 12th May",
+              "opponent": "Willenhall Nordley A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 28th Jul",
+              "opponent": "Willenhall Nordley A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 19th May",
+              "opponent": "Bilston BC",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 4th Aug",
+              "opponent": "Bilston BC",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 2nd Jun",
+              "opponent": "Hammerwich A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 18th Aug",
+              "opponent": "Hammerwich A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 9th Jun",
+              "opponent": "Lichfield Road A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 25th Aug",
+              "opponent": "Lichfield Road A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 16th Jun",
+              "opponent": "Short Heath Libs",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 1st Sep",
+              "opponent": "Short Heath Libs",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 23rd Jun",
+              "opponent": "Willenhall Nordley B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 8th Sep",
+              "opponent": "Willenhall Nordley B",
+              "venue": "Away"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Bilston BC",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Bridgtown",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Essington",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hammerwich A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Hawkins Sports",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Lichfield Road A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Short Heath Libs",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Willenhall Nordley A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Willenhall Nordley B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Walsall Vets",
+          "name": "Willenhall Trinity B",
+          "division": 3,
+          "fixtures": [
+            {
+              "date": "Tue 21st Apr",
+              "opponent": "Burntwood U3A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 7th Jul",
+              "opponent": "Burntwood U3A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 28th Apr",
+              "opponent": "Lichfield Museum B.C. A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 14th Jul",
+              "opponent": "Lichfield Museum B.C. A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 5th May",
+              "opponent": "Pelsall C",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 21st Jul",
+              "opponent": "Pelsall C",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 12th May",
+              "opponent": "Pleck Community A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 28th Jul",
+              "opponent": "Pleck Community A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 19th May",
+              "opponent": "Cannock Hatherton B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 4th Aug",
+              "opponent": "Cannock Hatherton B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 2nd Jun",
+              "opponent": "Lichfield Museum B.C. B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 18th Aug",
+              "opponent": "Lichfield Museum B.C. B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 9th Jun",
+              "opponent": "Harrisons British Legion",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 25th Aug",
+              "opponent": "Harrisons British Legion",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 16th Jun",
+              "opponent": "Heath Hayes",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 1st Sep",
+              "opponent": "Heath Hayes",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 23rd Jun",
+              "opponent": "Brownhills Oak Park A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 8th Sep",
+              "opponent": "Brownhills Oak Park A",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Ashmole BC",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Breakaways Harrisons",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Chart",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hammerwich B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Leamore Blakenall",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Pavilion CES A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pavilion CES B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pelsall A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Streetly Meths A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "The Rag",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Walsall Vets",
+          "name": "Willenhall Trinity C",
+          "division": 4,
+          "fixtures": [
+            {
+              "date": "Tue 21st Apr",
+              "opponent": "Cannock Hatherton A",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 7th Jul",
+              "opponent": "Cannock Hatherton A",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 28th Apr",
+              "opponent": "Anchor Meadow",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 14th Jul",
+              "opponent": "Anchor Meadow",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 5th May",
+              "opponent": "Pelsall B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 21st Jul",
+              "opponent": "Pelsall B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 12th May",
+              "opponent": "Bye",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 28th Jul",
+              "opponent": "Bye",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 19th May",
+              "opponent": "Brownhills Oak Park B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 4th Aug",
+              "opponent": "Brownhills Oak Park B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 2nd Jun",
+              "opponent": "Lichfield Road B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 18th Aug",
+              "opponent": "Lichfield Road B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 9th Jun",
+              "opponent": "Pleck Community B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 25th Aug",
+              "opponent": "Pleck Community B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 16th Jun",
+              "opponent": "Streetly Meths B",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 1st Sep",
+              "opponent": "Streetly Meths B",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 23rd Jun",
+              "opponent": "Cannock Hatherton C",
+              "venue": "Away"
+            },
+            {
+              "date": "Tue 8th Sep",
+              "opponent": "Cannock Hatherton C",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Anchor Meadow",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Brownhills Oak Park B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Cannock Hatherton A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Cannock Hatherton C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Lichfield Road B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Pelsall B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pleck Community B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Streetly Meths B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Willenhall Trinity C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
       ]
     },
     {
       "name": "Wolverhampton Seniors",
-      "web": "wolverhamptonseniors",
       "teams": [
-        { "name": "Willenhall Trinity A", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity C", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] }
-      ]
-    },
-    {
-      "name": "Cannock",
-      "web": "cannock",
-      "teams": [
-        { "name": "Willenhall Trinity", "division": 1, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Wolverhampton Seniors",
+          "name": "Willenhall Trinity A",
+          "division": 2,
+          "fixtures": [
+            {
+              "date": "Wed 8th Apr",
+              "opponent": "Wombourne A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 1st Jul",
+              "opponent": "Wombourne A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 15th Apr",
+              "opponent": "Springvale A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 8th Jul",
+              "opponent": "Springvale A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 22nd Apr",
+              "opponent": "Ashmore Park A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 15th Jul",
+              "opponent": "Ashmore Park A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 29th Apr",
+              "opponent": "Hamiltons B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 29th Jul",
+              "opponent": "Hamiltons B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 6th May",
+              "opponent": "Bye",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 5th Aug",
+              "opponent": "Bye",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 13th May",
+              "opponent": "Swindon A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 19th Aug",
+              "opponent": "Swindon A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 20th May",
+              "opponent": "Wednesfield Cons A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 26th Aug",
+              "opponent": "Wednesfield Cons A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 27th May",
+              "opponent": "Swindon B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 2nd Sep",
+              "opponent": "Swindon B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 3rd Jun",
+              "opponent": "Amery",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 9th Sep",
+              "opponent": "Amery",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 17th Jun",
+              "opponent": "Breakaways Harrisions",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 16th Sep",
+              "opponent": "Breakaways Harrisions",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 24th Jun",
+              "opponent": "Pennfields C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 23rd Sep",
+              "opponent": "Pennfields C",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Amery",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Ashmore Park A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Breakaways Harrisions",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hamiltons B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pennfields C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Springvale A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Swindon A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Swindon B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Wednesfield Cons A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Wombourne A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Wolverhampton Seniors",
+          "name": "Willenhall Trinity B",
+          "division": 3,
+          "fixtures": [
+            {
+              "date": "Wed 8th Apr",
+              "opponent": "Coseley A C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 1st Jul",
+              "opponent": "Coseley A C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 15th Apr",
+              "opponent": "Fordhouses A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 8th Jul",
+              "opponent": "Fordhouses A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 22nd Apr",
+              "opponent": "Essington B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 15th Jul",
+              "opponent": "Essington B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 29th Apr",
+              "opponent": "Pennfields B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 29th Jul",
+              "opponent": "Pennfields B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 6th May",
+              "opponent": "Willenhall Trinity C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 5th Aug",
+              "opponent": "Willenhall Trinity C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 13th May",
+              "opponent": "Pavilion CES D",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 19th Aug",
+              "opponent": "Pavilion CES D",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 20th May",
+              "opponent": "Fordhouses B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 26th Aug",
+              "opponent": "Fordhouses B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 27th May",
+              "opponent": "Harrisons",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 2nd Sep",
+              "opponent": "Harrisons",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 3rd Jun",
+              "opponent": "Pennfields E",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 9th Sep",
+              "opponent": "Pennfields E",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 17th Jun",
+              "opponent": "Hamiltons C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 16th Sep",
+              "opponent": "Hamiltons C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 24th Jun",
+              "opponent": "Pavilion CES C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 23rd Sep",
+              "opponent": "Pavilion CES C",
+              "venue": "Away"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Coseley A C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Essington B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Fordhouses A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Fordhouses B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Hamiltons C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Harrisons",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pavilion CES C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pavilion CES D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Pennfields B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Pennfields E",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Willenhall Trinity B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "12",
+              "club": "0",
+              "played": "Willenhall Trinity C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Wolverhampton Seniors",
+          "name": "Willenhall Trinity C",
+          "division": 3,
+          "fixtures": [
+            {
+              "date": "Wed 8th Apr",
+              "opponent": "Harrisons",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 1st Jul",
+              "opponent": "Harrisons",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 15th Apr",
+              "opponent": "Essington B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 8th Jul",
+              "opponent": "Essington B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 22nd Apr",
+              "opponent": "Pennfields B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 15th Jul",
+              "opponent": "Pennfields B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 29th Apr",
+              "opponent": "Pavilion CES C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 29th Jul",
+              "opponent": "Pavilion CES C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 6th May",
+              "opponent": "Willenhall Trinity B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 5th Aug",
+              "opponent": "Willenhall Trinity B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 13th May",
+              "opponent": "Fordhouses B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 19th Aug",
+              "opponent": "Fordhouses B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 20th May",
+              "opponent": "Pennfields E",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 26th Aug",
+              "opponent": "Pennfields E",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 27th May",
+              "opponent": "Pavilion CES D",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 2nd Sep",
+              "opponent": "Pavilion CES D",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 3rd Jun",
+              "opponent": "Hamiltons C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 9th Sep",
+              "opponent": "Hamiltons C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 17th Jun",
+              "opponent": "Coseley A C",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 16th Sep",
+              "opponent": "Coseley A C",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 24th Jun",
+              "opponent": "Fordhouses A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 23rd Sep",
+              "opponent": "Fordhouses A",
+              "venue": "Away"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Coseley A C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Essington B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Fordhouses A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Fordhouses B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Hamiltons C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Harrisons",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pavilion CES C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Pavilion CES D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Pennfields B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Pennfields E",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Willenhall Trinity B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "12",
+              "club": "0",
+              "played": "Willenhall Trinity C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
       ]
     },
     {
       "name": "Bilston LV",
-      "web": "bilston",
       "teams": [
-        { "name": "Willenhall Trinity A", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] },
-        { "name": "Willenhall Trinity B", "division": 3, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Bilston LV",
+          "name": "Willenhall Trinity A",
+          "division": 2,
+          "fixtures": [
+            {
+              "date": "Thu 30th Apr",
+              "opponent": "FORDHOUSES A",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 22nd Jul",
+              "opponent": "FORDHOUSES A",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 6th May",
+              "opponent": "BILSTON A",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 30th Jul",
+              "opponent": "BILSTON A",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 21st May",
+              "opponent": "WEDNESFIELD CONS",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 12th Aug",
+              "opponent": "MB CHESLYN HAY B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 27th May",
+              "opponent": "SPRINGVALE A",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 20th Aug",
+              "opponent": "BLOXWICH STAFFORD ROAD B",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 18th Jun",
+              "opponent": "MB CHESLYN HAY B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 26th Aug",
+              "opponent": "WEDNESFIELD CONS",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 24th Jun",
+              "opponent": "BLOXWICH STAFFORD ROAD B",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 3rd Sep",
+              "opponent": "SPRINGVALE A",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 9th Jul",
+              "opponent": "WOMBOURNE B",
+              "venue": "Away"
+            },
+            {
+              "date": "Wed 9th Sep",
+              "opponent": "WOMBOURNE B",
+              "venue": "Home"
+            },
+            {
+              "date": "Wed 15th Jul",
+              "opponent": "STILE B",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 17th Sep",
+              "opponent": "STILE B",
+              "venue": "Away"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "BILSTON A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "BLOXWICH STAFFORD ROAD B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "FORDHOUSES A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "MB CHESLYN HAY B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "SPRINGVALE A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "STILE B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "WEDNESFIELD CONS",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "WILLENHALL TRINITY A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "WOMBOURNE B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        },
+        {
+          "league": "Bilston LV",
+          "name": "Willenhall Trinity B",
+          "division": 3,
+          "fixtures": [
+            {
+              "date": "Thu 30th Apr",
+              "opponent": "FORDHOUSES B",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 9th Jul",
+              "opponent": "WOMBOURNE C",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 7th May",
+              "opponent": "WOMBOURNE C",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 16th Jul",
+              "opponent": "FORDHOUSES B",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 21st May",
+              "opponent": "SPRINGVALE B",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 23rd Jul",
+              "opponent": "SPRINGVALE B",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 28th May",
+              "opponent": "HAMILTONS",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 30th Jul",
+              "opponent": "HAMILTONS",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 11th Jun",
+              "opponent": "PAVILION D",
+              "venue": "Home"
+            },
+            {
+              "date": "Tue 4th Aug",
+              "opponent": "PAVILION D",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 18th Jun",
+              "opponent": "ESSINGTON",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 13th Aug",
+              "opponent": "ESSINGTON",
+              "venue": "Home"
+            },
+            {
+              "date": "Thu 25th Jun",
+              "opponent": "PENNFIELDS B",
+              "venue": "Away"
+            },
+            {
+              "date": "Thu 20th Aug",
+              "opponent": "PENNFIELDS B",
+              "venue": "Home"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "ESSINGTON",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "FORDHOUSES B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "HAMILTONS",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "PAVILION D",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "PENNFIELDS B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "SPRINGVALE B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "WILLENHALL TRINITY B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "WOMBOURNE C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
       ]
     },
     {
       "name": "Wolverhampton and District Works",
-      "web": "wolverhamptonworks",
       "teams": [
-        { "name": "Willenhall Trinity", "division": 2, "fixtures": [], "results": [], "table": [], "averages": [] }
+        {
+          "league": "Wolverhampton and District Works",
+          "name": "Willenhall Trinity",
+          "division": 2,
+          "fixtures": [
+            {
+              "date": "Sat 4th Apr",
+              "opponent": "Pennfields B",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 11th Apr",
+              "opponent": "Hawkins Sports",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 18th Apr",
+              "opponent": "Pennfields C",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 25th Apr",
+              "opponent": "Amery",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 2nd May",
+              "opponent": "Bye",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 9th May",
+              "opponent": "Woodfield ECC",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 16th May",
+              "opponent": "Dudley Dell B",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 23rd May",
+              "opponent": "Glasscutters",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 30th May",
+              "opponent": "Short Heath Libs",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 6th Jun",
+              "opponent": "Springvale",
+              "venue": "2:30pm"
+            },
+            {
+              "date": "Sat 13th Jun",
+              "opponent": "Pennfields A",
+              "venue": "2:30pm"
+            }
+          ],
+          "results": [],
+          "table": [
+            {
+              "pos": "1",
+              "club": "0",
+              "played": "Amery",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "2",
+              "club": "0",
+              "played": "Dudley Dell B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "3",
+              "club": "0",
+              "played": "Glasscutters",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "4",
+              "club": "0",
+              "played": "Hawkins Sports",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "5",
+              "club": "0",
+              "played": "Pennfields A",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "6",
+              "club": "0",
+              "played": "Pennfields B",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "7",
+              "club": "0",
+              "played": "Pennfields C",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "8",
+              "club": "0",
+              "played": "Short Heath Libs",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "9",
+              "club": "0",
+              "played": "Springvale",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "10",
+              "club": "0",
+              "played": "Willenhall Trinity",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            },
+            {
+              "pos": "11",
+              "club": "0",
+              "played": "Woodfield ECC",
+              "won": "0",
+              "drawn": "0",
+              "lost": "0",
+              "points": "0",
+              "is_wtbc": false
+            }
+          ],
+          "averages": []
+        }
+      ]
+    },
+    {
+      "name": "Cannock",
+      "teams": [
+        {
+          "league": "Cannock",
+          "name": "Willenhall Trinity",
+          "division": 2,
+          "fixtures": [],
+          "results": [],
+          "table": [],
+          "averages": []
+        }
       ]
     }
   ]
