@@ -21,28 +21,14 @@
 
   const FOOTER = `
   <footer>
-    <div class="footer-inner">
+    <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem">
       <div>
         <div class="footer-brand">Willenhall Trinity Bowls Club</div>
-        <p style="font-size:0.9rem;margin-top:0.5rem">Proudly serving the local community.<br>All are welcome — come and bowl with us!</p>
+        <p style="font-size:0.85rem;color:#888;margin-top:0.3rem">Proudly serving the local community since 1921.</p>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="fixtures.html">Fixtures &amp; Results</a></li>
-          <li><span style="color:#555;font-size:0.9rem">News — coming soon</span></li>
-          <li><span style="color:#555;font-size:0.9rem">Gallery — coming soon</span></li>
-          <li><span style="color:#555;font-size:0.9rem">Contact — coming soon</span></li>
-          <li><a href="history.html">Club History</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li style="font-size:0.9rem">📍 Charles Street,<br>Willenhall,<br>WV13 1HG</li>
-          <li style="margin-top:0.5rem;font-size:0.9rem">✉️ nkempson14@gmail.com</li>
-        </ul>
+      <div style="font-size:0.85rem;color:#888;text-align:right">
+        <div>&#128205; Charles Street, Willenhall, WV13 1HG</div>
+        <div style="margin-top:0.25rem">&#9993; <a href="mailto:nkempson14@gmail.com" style="color:#888">nkempson14@gmail.com</a></div>
       </div>
     </div>
     <div class="footer-copy">© ${new Date().getFullYear()} Willenhall Trinity Bowls Club. All rights reserved.</div>
