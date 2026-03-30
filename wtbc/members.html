@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Area | Willenhall Trinity Bowls Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Members Area</h1>
+    <p>For club members only</p>
+  </div>
+</div>
+
+<!-- PASSWORD GATE -->
+<div id="gate" style="padding:2rem 1.5rem">
+  <div class="password-gate">
+    <div class="gate-header">
+      <h2>&#128274; Members Login</h2>
+      <p style="opacity:0.8;font-size:0.9rem;margin-top:0.3rem">Please enter the members password to continue</p>
+    </div>
+    <div class="gate-body">
+      <div class="form-group">
+        <label for="pw">Password</label>
+        <input type="password" id="pw" placeholder="Enter password..." onkeydown="if(event.key==='Enter')checkPw()">
+        <div class="error-msg" id="pwError">Incorrect password. Please try again.</div>
+      </div>
+      <button class="btn btn-red" onclick="checkPw()" style="width:100%;padding:0.75rem">Enter Members Area</button>
+      <p style="margin-top:1rem;font-size:0.8rem;color:var(--mid);text-align:center">Forgotten the password? Contact the club secretary.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MEMBERS CONTENT (hidden until correct password) -->
+<div id="membersContent" class="members-content">
+
+  <div class="section">
+    <div class="section-heading"><h2>Members Area</h2></div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-bottom:3rem">
+
+      <div class="card">
+        <div style="background:var(--red);padding:1rem 1.5rem">
+          <div style="font-size:1.5rem">&#128196;</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">AGM Minutes 2025</div>
+          <p style="font-size:0.9rem;color:var(--mid)">Minutes from the Annual General Meeting held 1st March 2025.</p>
+          <a href="#" class="btn btn-red" style="display:inline-block;margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem">Download PDF</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="background:var(--charcoal);padding:1rem 1.5rem">
+          <div style="font-size:1.5rem">&#127941;</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Club Rules &amp; Constitution</div>
+          <p style="font-size:0.9rem;color:var(--mid)">The official club rules and constitution document.</p>
+          <a href="#" class="btn btn-red" style="display:inline-block;margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem">Download PDF</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="background:#10b981;padding:1rem 1.5rem">
+          <div style="font-size:1.5rem">&#128176;</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Subscription Rates 2025</div>
+          <p style="font-size:0.9rem;color:var(--mid)">Current membership fees and how to pay.</p>
+          <a href="#" class="btn btn-red" style="display:inline-block;margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem">View Details</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MEMBERS LIST -->
+    <div class="section-heading"><h2>Committee 2025</h2></div>
+    <div class="table-wrap" style="margin-bottom:3rem">
+      <table>
+        <thead><tr><th>Role</th><th>Name</th><th>Contact</th></tr></thead>
+        <tbody>
+          <tr><td>Club President</td><td>[Name]</td><td>[Email or Phone]</td></tr>
+          <tr><td>Secretary</td><td>[Name]</td><td>[Email or Phone]</td></tr>
+          <tr><td>Treasurer</td><td>[Name]</td><td>[Email or Phone]</td></tr>
+          <tr><td>Match Secretary</td><td>[Name]</td><td>[Email or Phone]</td></tr>
+          <tr><td>Welfare Officer</td><td>[Name]</td><td>[Email or Phone]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INTERNAL NOTICES -->
+    <div class="section-heading"><h2>Internal Notices</h2></div>
+    <div style="background:white;border:1px solid var(--border);border-radius:4px;padding:1.5rem">
+      <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;margin-bottom:1rem">
+        <div style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--mid);margin-bottom:0.25rem">Notice — 10 March 2025</div>
+        <p>Reminder to all team captains: please submit match result cards to the Match Secretary within 48 hours of each match.</p>
+      </div>
+      <div style="border-bottom:1px solid var(--border);padding-bottom:1rem;margin-bottom:1rem">
+        <div style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--mid);margin-bottom:0.25rem">Notice — 1 March 2025</div>
+        <p>The club has agreed to purchase new jacks for the 2025 season. These will be available from the start of April.</p>
+      </div>
+      <div>
+        <div style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--mid);margin-bottom:0.25rem">Notice — 15 February 2025</div>
+        <p>A working party is needed on the green on Saturday 22nd March. Please let the secretary know if you can help.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;text-align:right">
+      <button onclick="logout()" class="btn" style="border:2px solid var(--border);font-size:0.85rem">&#128275; Log Out</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// CHANGE THIS PASSWORD to whatever your club wants to use
+const MEMBERS_PASSWORD = 'trinity2025';
+
+function checkPw() {
+  const entered = document.getElementById('pw').value;
+  if (entered === MEMBERS_PASSWORD) {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('membersContent').style.display = 'block';
+    sessionStorage.setItem('wtbc_auth', '1');
+  } else {
+    document.getElementById('pwError').style.display = 'block';
+    document.getElementById('pw').value = '';
+    document.getElementById('pw').focus();
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('wtbc_auth');
+  document.getElementById('gate').style.display = 'block';
+  document.getElementById('membersContent').style.display = 'none';
+  document.getElementById('pw').value = '';
+}
+
+// Auto-unlock if already authenticated this session
+if (sessionStorage.getItem('wtbc_auth') === '1') {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('membersContent').style.display = 'block';
+}
+</script>
+
+</body>
+</html>

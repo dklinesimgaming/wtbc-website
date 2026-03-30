@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixtures &amp; Results | Willenhall Trinity Bowls Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Fixtures &amp; Results</h1>
+    <p>2025 Season — all home and away matches</p>
+  </div>
+</div>
+
+<div class="section">
+
+  <!-- FILTER TABS -->
+  <div style="display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap">
+    <button class="tab-btn active" data-team="all">All Teams</button>
+    <button class="tab-btn" data-team="a">A Team</button>
+    <button class="tab-btn" data-team="b">B Team</button>
+    <button class="tab-btn" data-team="c">C Team</button>
+  </div>
+
+  <!-- UPCOMING FIXTURES -->
+  <div class="section-heading"><h2>Upcoming Fixtures</h2></div>
+  <div class="table-wrap" style="margin-bottom:3rem">
+    <table id="fixturesTable">
+      <thead>
+        <tr>
+          <th>Date</th><th>Team</th><th>Home/Away</th><th>Opponents</th><th>Venue</th><th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-team="a"><td>05 Apr 2025</td><td>A Team</td><td>Home</td><td>Bloxwich BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
+        <tr data-team="b"><td>06 Apr 2025</td><td>B Team</td><td>Away</td><td>Walsall Wood BC</td><td>Walsall Wood</td><td>6:30pm</td></tr>
+        <tr data-team="a"><td>12 Apr 2025</td><td>A Team</td><td>Away</td><td>Darlaston BC</td><td>Darlaston</td><td>6:30pm</td></tr>
+        <tr data-team="c"><td>13 Apr 2025</td><td>C Team</td><td>Home</td><td>Short Heath BC</td><td>Trinity Green</td><td>2:00pm</td></tr>
+        <tr data-team="b"><td>19 Apr 2025</td><td>B Team</td><td>Home</td><td>Essington BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
+        <tr data-team="a"><td>26 Apr 2025</td><td>A Team</td><td>Home</td><td>Pelsall BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="section-heading"><h2>Recent Results</h2></div>
+  <div class="table-wrap" style="margin-bottom:3rem">
+    <table id="resultsTable">
+      <thead>
+        <tr><th>Date</th><th>Team</th><th>H/A</th><th>Opponents</th><th>Score</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr data-team="a"><td>29 Mar 2025</td><td>A Team</td><td>Home</td><td>Brownhills BC</td><td>74 – 68</td><td><span class="badge-result badge-w">W</span></td></tr>
+        <tr data-team="b"><td>27 Mar 2025</td><td>B Team</td><td>Away</td><td>Hednesford BC</td><td>61 – 75</td><td><span class="badge-result badge-l">L</span></td></tr>
+        <tr data-team="c"><td>23 Mar 2025</td><td>C Team</td><td>Home</td><td>Aldridge BC</td><td>70 – 70</td><td><span class="badge-result badge-d">D</span></td></tr>
+        <tr data-team="a"><td>22 Mar 2025</td><td>A Team</td><td>Away</td><td>Rushall BC</td><td>82 – 65</td><td><span class="badge-result badge-w">W</span></td></tr>
+        <tr data-team="b"><td>20 Mar 2025</td><td>B Team</td><td>Home</td><td>Burntwood BC</td><td>77 – 63</td><td><span class="badge-result badge-w">W</span></td></tr>
+        <tr data-team="a"><td>15 Mar 2025</td><td>A Team</td><td>Home</td><td>Cannock BC</td><td>58 – 72</td><td><span class="badge-result badge-l">L</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LEAGUE TABLE -->
+  <div class="section-heading"><h2>League Standing — A Team</h2></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pos</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Pts</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Bloxwich BC</td><td>8</td><td>7</td><td>0</td><td>1</td><td>14</td></tr>
+        <tr><td>2</td><td><strong style="color:var(--red)">Willenhall Trinity BC</strong></td><td>8</td><td>5</td><td>1</td><td>2</td><td>11</td></tr>
+        <tr><td>3</td><td>Rushall BC</td><td>8</td><td>4</td><td>1</td><td>3</td><td>9</td></tr>
+        <tr><td>4</td><td>Pelsall BC</td><td>8</td><td>4</td><td>0</td><td>4</td><td>8</td></tr>
+        <tr><td>5</td><td>Darlaston BC</td><td>8</td><td>3</td><td>1</td><td>4</td><td>7</td></tr>
+        <tr><td>6</td><td>Brownhills BC</td><td>8</td><td>2</td><td>0</td><td>6</td><td>4</td></tr>
+        <tr><td>7</td><td>Cannock BC</td><td>8</td><td>1</td><td>1</td><td>6</td><td>3</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.8rem;color:var(--mid);margin-top:0.75rem">* Placeholder data — update with your real fixtures, results and league table.</p>
+
+</div>
+
+<style>
+.tab-btn {
+  padding:0.5rem 1.2rem;border:2px solid var(--border);
+  background:white;border-radius:3px;cursor:pointer;
+  font-family:inherit;font-size:0.85rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:0.05em;transition:all 0.2s;
+}
+.tab-btn.active,.tab-btn:hover{background:var(--red);color:white;border-color:var(--red);}
+tr.hidden{display:none;}
+</style>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+    const team = this.dataset.team;
+    ['fixturesTable','resultsTable'].forEach(id=>{
+      document.querySelectorAll(`#${id} tbody tr`).forEach(row=>{
+        row.classList.toggle('hidden', team!=='all' && row.dataset.team!==team);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
