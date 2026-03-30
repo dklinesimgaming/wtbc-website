@@ -78,11 +78,24 @@ function badge(result) {
   return `<span class="badge-result ${map[result]||'badge-tbc'}">${result||'TBC'}</span>`;
 }
 
+function parseDate(dateStr) {
+  // Convert "Mon 27th Apr" to a sortable date
+  if (!dateStr) return new Date(9999, 0, 1);
+  const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+  const match = dateStr.match(/(\d+)\w*\s+(\w+)/);
+  if (!match) return new Date(9999, 0, 1);
+  const day   = parseInt(match[1]);
+  const month = months[match[2]];
+  const year  = new Date().getFullYear();
+  return new Date(year, month, day);
+}
+
 function renderFixtures(fixtures) {
   if (!fixtures||!fixtures.length) return '<p class="no-data">No upcoming fixtures found.</p>';
+  const sorted = [...fixtures].sort((a,b) => parseDate(a.date) - parseDate(b.date));
   return `<div class="table-wrap"><table>
     <thead><tr><th>Date</th><th>H/A</th><th>Opponents</th></tr></thead>
-    <tbody>${fixtures.map(f=>`<tr>
+    <tbody>${sorted.map(f=>`<tr>
       <td>${f.date}</td>
       <td><span class="badge-result ${f.venue==='Home'?'badge-w':'badge-tbc'}">${f.venue}</span></td>
       <td>${f.opponent}</td>
