@@ -11,7 +11,7 @@
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="#" onclick="comingSoon(event)">Fixtures</a></li>
+      <li><a href="fixtures.html">Fixtures</a></li>
       <li><a href="#" onclick="comingSoon(event)">News</a></li>
       <li><a href="#" onclick="comingSoon(event)">Gallery</a></li>
       <li><a href="#" onclick="comingSoon(event)">Contact</a></li>
@@ -30,7 +30,7 @@
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><span style="color:#555;font-size:0.9rem">Fixtures &amp; Results — coming soon</span></li>
+          <li><a href="fixtures.html">Fixtures &amp; Results</a></li>
           <li><span style="color:#555;font-size:0.9rem">News — coming soon</span></li>
           <li><span style="color:#555;font-size:0.9rem">Gallery — coming soon</span></li>
           <li><span style="color:#555;font-size:0.9rem">Contact — coming soon</span></li>
