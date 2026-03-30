@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fixtures &amp; Results | Willenhall Trinity Bowls Club</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .league-tabs { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem; }
+    .league-tab {
+      padding:0.5rem 1rem; background:white; border:2px solid var(--border);
+      border-radius:3px; cursor:pointer; font-family:inherit; font-size:0.85rem;
+      font-weight:600; transition:all 0.2s;
+    }
+    .league-tab.active,.league-tab:hover { background:var(--red); color:white; border-color:var(--red); }
+    .league-panel { display:none; }
+    .league-panel.active { display:block; }
+    .team-tabs { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+    .team-tab {
+      padding:0.4rem 0.9rem; background:white; border:1.5px solid var(--border);
+      border-radius:3px; cursor:pointer; font-family:inherit; font-size:0.8rem;
+      font-weight:600; transition:all 0.2s;
+    }
+    .team-tab.active,.team-tab:hover { background:var(--charcoal); color:white; border-color:var(--charcoal); }
+    .team-panel { display:none; }
+    .team-panel.active { display:block; }
+    .data-tabs { display:flex; gap:0; margin-bottom:0; border-bottom:2px solid var(--border); flex-wrap:wrap; }
+    .data-tab {
+      padding:0.6rem 1.2rem; background:none; border:none; cursor:pointer;
+      font-family:inherit; font-size:0.85rem; font-weight:600; color:var(--mid);
+      border-bottom:3px solid transparent; margin-bottom:-2px; transition:all 0.2s;
+    }
+    .data-tab.active { color:var(--red); border-bottom-color:var(--red); }
+    .data-panel { display:none; padding-top:1.5rem; }
+    .data-panel.active { display:block; }
+    .wtbc-row td { background:#fff8f8 !important; font-weight:600; }
+    .loading { text-align:center; padding:3rem; color:var(--mid); }
+    .error-box { background:#fff3f3; border:1px solid #fcc; border-radius:4px; padding:1.5rem; color:#c00; }
+    .updated { font-size:0.8rem; color:var(--mid); margin-bottom:1.5rem; }
+    .no-data { color:var(--mid); font-size:0.9rem; font-style:italic; padding:1rem 0; }
+    .avg-bar { height:8px; background:var(--red); border-radius:4px; display:inline-block; vertical-align:middle; }
+  </style>
 </head>
 <body>
 <script src="shared.js"></script>
@@ -12,101 +47,173 @@
 <div class="page-header">
   <div class="container">
     <h1>Fixtures &amp; Results</h1>
-    <p>2025 Season — all home and away matches</p>
+    <p>Live data from bowlsresults.co.uk &mdash; updated every 4 hours</p>
   </div>
 </div>
 
 <div class="section">
-
-  <!-- FILTER TABS -->
-  <div style="display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap">
-    <button class="tab-btn active" data-team="all">All Teams</button>
-    <button class="tab-btn" data-team="a">A Team</button>
-    <button class="tab-btn" data-team="b">B Team</button>
-    <button class="tab-btn" data-team="c">C Team</button>
+  <div id="loading" class="loading"><p>&#9900; Loading fixtures and results...</p></div>
+  <div id="error" class="error-box" style="display:none">
+    <strong>Could not load fixtures data.</strong>
+    <p style="margin-top:0.5rem">Please try again later or visit <a href="https://bowlsresults.co.uk" target="_blank">bowlsresults.co.uk</a> directly.</p>
   </div>
-
-  <!-- UPCOMING FIXTURES -->
-  <div class="section-heading"><h2>Upcoming Fixtures</h2></div>
-  <div class="table-wrap" style="margin-bottom:3rem">
-    <table id="fixturesTable">
-      <thead>
-        <tr>
-          <th>Date</th><th>Team</th><th>Home/Away</th><th>Opponents</th><th>Venue</th><th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr data-team="a"><td>05 Apr 2025</td><td>A Team</td><td>Home</td><td>Bloxwich BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
-        <tr data-team="b"><td>06 Apr 2025</td><td>B Team</td><td>Away</td><td>Walsall Wood BC</td><td>Walsall Wood</td><td>6:30pm</td></tr>
-        <tr data-team="a"><td>12 Apr 2025</td><td>A Team</td><td>Away</td><td>Darlaston BC</td><td>Darlaston</td><td>6:30pm</td></tr>
-        <tr data-team="c"><td>13 Apr 2025</td><td>C Team</td><td>Home</td><td>Short Heath BC</td><td>Trinity Green</td><td>2:00pm</td></tr>
-        <tr data-team="b"><td>19 Apr 2025</td><td>B Team</td><td>Home</td><td>Essington BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
-        <tr data-team="a"><td>26 Apr 2025</td><td>A Team</td><td>Home</td><td>Pelsall BC</td><td>Trinity Green</td><td>6:30pm</td></tr>
-      </tbody>
-    </table>
+  <div id="content" style="display:none">
+    <p class="updated" id="updated"></p>
+    <div class="league-tabs" id="leagueTabs"></div>
+    <div id="leaguePanels"></div>
   </div>
-
-  <!-- RESULTS -->
-  <div class="section-heading"><h2>Recent Results</h2></div>
-  <div class="table-wrap" style="margin-bottom:3rem">
-    <table id="resultsTable">
-      <thead>
-        <tr><th>Date</th><th>Team</th><th>H/A</th><th>Opponents</th><th>Score</th><th>Result</th></tr>
-      </thead>
-      <tbody>
-        <tr data-team="a"><td>29 Mar 2025</td><td>A Team</td><td>Home</td><td>Brownhills BC</td><td>74 – 68</td><td><span class="badge-result badge-w">W</span></td></tr>
-        <tr data-team="b"><td>27 Mar 2025</td><td>B Team</td><td>Away</td><td>Hednesford BC</td><td>61 – 75</td><td><span class="badge-result badge-l">L</span></td></tr>
-        <tr data-team="c"><td>23 Mar 2025</td><td>C Team</td><td>Home</td><td>Aldridge BC</td><td>70 – 70</td><td><span class="badge-result badge-d">D</span></td></tr>
-        <tr data-team="a"><td>22 Mar 2025</td><td>A Team</td><td>Away</td><td>Rushall BC</td><td>82 – 65</td><td><span class="badge-result badge-w">W</span></td></tr>
-        <tr data-team="b"><td>20 Mar 2025</td><td>B Team</td><td>Home</td><td>Burntwood BC</td><td>77 – 63</td><td><span class="badge-result badge-w">W</span></td></tr>
-        <tr data-team="a"><td>15 Mar 2025</td><td>A Team</td><td>Home</td><td>Cannock BC</td><td>58 – 72</td><td><span class="badge-result badge-l">L</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- LEAGUE TABLE -->
-  <div class="section-heading"><h2>League Standing — A Team</h2></div>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Pos</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Pts</th></tr></thead>
-      <tbody>
-        <tr><td>1</td><td>Bloxwich BC</td><td>8</td><td>7</td><td>0</td><td>1</td><td>14</td></tr>
-        <tr><td>2</td><td><strong style="color:var(--red)">Willenhall Trinity BC</strong></td><td>8</td><td>5</td><td>1</td><td>2</td><td>11</td></tr>
-        <tr><td>3</td><td>Rushall BC</td><td>8</td><td>4</td><td>1</td><td>3</td><td>9</td></tr>
-        <tr><td>4</td><td>Pelsall BC</td><td>8</td><td>4</td><td>0</td><td>4</td><td>8</td></tr>
-        <tr><td>5</td><td>Darlaston BC</td><td>8</td><td>3</td><td>1</td><td>4</td><td>7</td></tr>
-        <tr><td>6</td><td>Brownhills BC</td><td>8</td><td>2</td><td>0</td><td>6</td><td>4</td></tr>
-        <tr><td>7</td><td>Cannock BC</td><td>8</td><td>1</td><td>1</td><td>6</td><td>3</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:0.8rem;color:var(--mid);margin-top:0.75rem">* Placeholder data — update with your real fixtures, results and league table.</p>
-
 </div>
 
-<style>
-.tab-btn {
-  padding:0.5rem 1.2rem;border:2px solid var(--border);
-  background:white;border-radius:3px;cursor:pointer;
-  font-family:inherit;font-size:0.85rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:0.05em;transition:all 0.2s;
-}
-.tab-btn.active,.tab-btn:hover{background:var(--red);color:white;border-color:var(--red);}
-tr.hidden{display:none;}
-</style>
 <script>
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    this.classList.add('active');
-    const team = this.dataset.team;
-    ['fixturesTable','resultsTable'].forEach(id=>{
-      document.querySelectorAll(`#${id} tbody tr`).forEach(row=>{
-        row.classList.toggle('hidden', team!=='all' && row.dataset.team!==team);
-      });
-    });
+async function loadData() {
+  try {
+    const r = await fetch('data/results.json?t=' + Date.now());
+    if (!r.ok) throw new Error('No data');
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+function badge(result) {
+  const map = { W:'badge-w', L:'badge-l', D:'badge-d' };
+  return `<span class="badge-result ${map[result]||'badge-tbc'}">${result||'TBC'}</span>`;
+}
+
+function renderFixtures(fixtures) {
+  if (!fixtures||!fixtures.length) return '<p class="no-data">No upcoming fixtures found.</p>';
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Date</th><th>H/A</th><th>Opponents</th><th>Time</th></tr></thead>
+    <tbody>${fixtures.map(f=>`<tr>
+      <td>${f.date}</td>
+      <td><span class="badge-result ${f.venue==='Home'?'badge-w':'badge-tbc'}">${f.venue}</span></td>
+      <td>${f.venue==='Home'?f.away:f.home}</td>
+      <td>${f.time||'TBC'}</td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+function renderResults(results) {
+  if (!results||!results.length) return '<p class="no-data">No results recorded yet.</p>';
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Date</th><th>Home</th><th>Score</th><th>Away</th><th>Result</th></tr></thead>
+    <tbody>${results.map(r=>`<tr>
+      <td>${r.date}</td><td>${r.home}</td>
+      <td><strong>${r.home_score} &ndash; ${r.away_score}</strong></td>
+      <td>${r.away}</td><td>${badge(r.result)}</td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+function renderTable(table) {
+  if (!table||!table.length) return '<p class="no-data">League table not yet available.</p>';
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Pos</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Pts</th></tr></thead>
+    <tbody>${table.map(row=>`<tr class="${row.is_wtbc?'wtbc-row':''}">
+      <td>${row.pos}</td>
+      <td>${row.club}${row.is_wtbc?' &#11088;':''}</td>
+      <td>${row.played}</td><td>${row.won}</td><td>${row.drawn}</td><td>${row.lost}</td>
+      <td><strong>${row.points}</strong></td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+function renderAverages(averages) {
+  if (!averages||!averages.length) return '<p class="no-data">Player averages not yet available.</p>';
+  const maxAvg = Math.max(...averages.map(a=>parseFloat(a.average)||0));
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Player</th><th>Played</th><th>Won</th><th>Average</th></tr></thead>
+    <tbody>${averages.map(a=>{
+      const pct = maxAvg>0?(parseFloat(a.average)/maxAvg*80):0;
+      return `<tr>
+        <td>${a.player}</td><td>${a.played}</td><td>${a.won}</td>
+        <td>
+          <span class="avg-bar" style="width:${pct.toFixed(0)}px"></span>
+          <span style="margin-left:0.5rem">${a.average}</span>
+        </td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table></div>`;
+}
+
+function showData(teamId, section, btn) {
+  const panel = document.getElementById('panel-'+teamId);
+  panel.querySelectorAll('.data-tab').forEach(t=>t.classList.remove('active'));
+  panel.querySelectorAll('.data-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById(teamId+'-'+section).classList.add('active');
+  btn.classList.add('active');
+}
+
+function showLeague(idx) {
+  document.querySelectorAll('.league-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.league-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelector('.league-tab[data-idx="'+idx+'"]').classList.add('active');
+  document.getElementById('league-'+idx).classList.add('active');
+  showTeam(idx,0);
+}
+
+function showTeam(leagueIdx, teamIdx) {
+  const lp = document.getElementById('league-'+leagueIdx);
+  lp.querySelectorAll('.team-tab').forEach(t=>t.classList.remove('active'));
+  lp.querySelectorAll('.team-panel').forEach(p=>p.classList.remove('active'));
+  const tab = lp.querySelector('.team-tab[data-tidx="'+teamIdx+'"]');
+  const panel = document.getElementById('panel-l'+leagueIdx+'t'+teamIdx);
+  if(tab) tab.classList.add('active');
+  if(panel) panel.classList.add('active');
+}
+
+async function render() {
+  const data = await loadData();
+  document.getElementById('loading').style.display = 'none';
+  if (!data) { document.getElementById('error').style.display='block'; return; }
+
+  document.getElementById('updated').textContent = 'Last updated: ' + data.updated;
+  document.getElementById('content').style.display = 'block';
+
+  const tabsEl   = document.getElementById('leagueTabs');
+  const panelsEl = document.getElementById('leaguePanels');
+
+  data.leagues.forEach((league, li) => {
+    const tab = document.createElement('button');
+    tab.className = 'league-tab'+(li===0?' active':'');
+    tab.dataset.idx = li;
+    tab.textContent = league.name;
+    tab.onclick = ()=>showLeague(li);
+    tabsEl.appendChild(tab);
+
+    const teamTabsHtml = league.teams.map((team,ti)=>`
+      <button class="team-tab${ti===0?' active':''}" data-tidx="${ti}" onclick="showTeam(${li},${ti})">
+        ${team.name} <small style="opacity:0.7">Div ${team.division}</small>
+      </button>`).join('');
+
+    const teamPanelsHtml = league.teams.map((team,ti)=>{
+      const id = 'l'+li+'t'+ti;
+      return `<div class="team-panel" id="panel-${id}">
+        <div class="data-tabs">
+          <button class="data-tab active" onclick="showData('${id}','fixtures',this)">&#128197; Fixtures</button>
+          <button class="data-tab" onclick="showData('${id}','results',this)">&#127942; Results</button>
+          <button class="data-tab" onclick="showData('${id}','table',this)">&#128202; League Table</button>
+          <button class="data-tab" onclick="showData('${id}','averages',this)">&#128100; Player Averages</button>
+        </div>
+        <div class="data-panel active" id="${id}-fixtures">${renderFixtures(team.fixtures)}</div>
+        <div class="data-panel" id="${id}-results">${renderResults(team.results)}</div>
+        <div class="data-panel" id="${id}-table">${renderTable(team.table)}</div>
+        <div class="data-panel" id="${id}-averages">${renderAverages(team.averages)}</div>
+      </div>`;
+    }).join('');
+
+    const panel = document.createElement('div');
+    panel.className = 'league-panel'+(li===0?' active':'');
+    panel.id = 'league-'+li;
+    panel.innerHTML = `
+      <div class="section-heading"><h2>${league.name}</h2></div>
+      <div class="team-tabs">${teamTabsHtml}</div>
+      ${teamPanelsHtml}`;
+    panelsEl.appendChild(panel);
   });
-});
+
+  showTeam(0,0);
+}
+
+render();
 </script>
 </body>
 </html>
