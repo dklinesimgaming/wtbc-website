@@ -1,5 +1,5 @@
 /* shared.js — injects nav and footer into every page */
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   const NAV = `
   <nav>
     <a class="nav-brand" href="index.html">
@@ -47,7 +47,7 @@
   const toggle = document.querySelector('.nav-toggle');
   const links  = document.querySelector('.nav-links');
   if (toggle) toggle.addEventListener('click', () => links.classList.toggle('open'));
-})();
+});
 
 function comingSoon(e) {
   e.preventDefault();
