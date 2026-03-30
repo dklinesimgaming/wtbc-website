@@ -18,10 +18,124 @@
     <p>A friendly club welcoming all ages and abilities. Come and join us on the green in the heart of Willenhall.</p>
     <div class="hero-buttons">
       <a href="javascript:void(0)" onclick="comingSoon(event)" class="btn btn-white">Find Us</a>
-      <a href="javascript:void(0)" onclick="comingSoon(event)" class="btn btn-outline">Fixtures &amp; Results</a>
+      <a href="fixtures.html" class="btn btn-outline">Fixtures &amp; Results</a>
     </div>
   </div>
 </section>
+
+<!-- NEXT FIXTURES TICKER -->
+<div id="fixtureTicker" style="background:var(--charcoal);border-bottom:2px solid var(--red);overflow:hidden;display:none">
+  <div style="display:flex;align-items:stretch">
+    <div style="background:var(--red);color:white;padding:0.6rem 1.2rem;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;flex-shrink:0">
+      Next Fixtures
+    </div>
+    <div style="overflow:hidden;flex:1;position:relative">
+      <div id="tickerTrack" style="display:flex;align-items:center;gap:0;white-space:nowrap;will-change:transform">
+      </div>
+    </div>
+    <a href="fixtures.html" style="background:#222;color:#aaa;padding:0.6rem 1.2rem;font-size:0.75rem;font-weight:600;text-decoration:none;display:flex;align-items:center;flex-shrink:0;white-space:nowrap;border-left:1px solid #333">All Fixtures &rarr;</a>
+  </div>
+</div>
+
+<style>
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-item {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.6rem 1.5rem; color: white; font-size: 0.82rem;
+  border-right: 1px solid #333;
+}
+.ticker-item .t-date { color: #aaa; font-size: 0.75rem; }
+.ticker-item .t-badge {
+  font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem;
+  border-radius: 2px; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.t-home { background: var(--red); color: white; }
+.t-away { background: #444; color: #ccc; }
+.ticker-sep { color: #555; padding: 0 0.3rem; }
+</style>
+
+<script>
+(async function() {
+  try {
+    const r = await fetch('data/results.json?t=' + Date.now());
+    if (!r.ok) return;
+    const data = await r.json();
+
+    const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+    function parseDate(d) {
+      if (!d) return new Date(9999,0,1);
+      const m = d.match(/(\d+)\w*\s+(\w+)/);
+      if (!m) return new Date(9999,0,1);
+      return new Date(new Date().getFullYear(), months[m[2]], parseInt(m[1]));
+    }
+
+    // Gather all fixtures across all leagues and teams
+    const all = [];
+    const today = new Date(); today.setHours(0,0,0,0);
+
+    for (const league of data.leagues) {
+      for (const team of league.teams) {
+        for (const f of (team.fixtures || [])) {
+          const d = parseDate(f.date);
+          if (d >= today) {
+            all.push({
+              date:     f.date,
+              opponent: f.opponent,
+              venue:    f.venue,
+              team:     team.name,
+              league:   league.name,
+              ts:       d.getTime(),
+            });
+          }
+        }
+      }
+    }
+
+    // Sort by date and deduplicate (same date+opponent+venue)
+    all.sort((a,b) => a.ts - b.ts);
+    const seen = new Set();
+    const unique = all.filter(f => {
+      const key = f.date + f.opponent + f.venue;
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+
+    const next5 = unique.slice(0, 5);
+    if (!next5.length) return;
+
+    // Build ticker items — duplicate for seamless loop
+    const track = document.getElementById('tickerTrack');
+    const buildItems = () => next5.map(f => `
+      <span class="ticker-item">
+        <span class="t-date">${f.date}</span>
+        <span class="ticker-sep">&#9679;</span>
+        <strong>${f.opponent}</strong>
+        <span class="ticker-sep">&#9679;</span>
+        <span class="t-badge ${f.venue==='Home'?'t-home':'t-away'}">${f.venue}</span>
+        <span class="ticker-sep">&#9679;</span>
+        <span style="color:#999;font-size:0.72rem">${f.team}</span>
+      </span>`).join('');
+
+    // Double the items for seamless infinite scroll
+    track.innerHTML = buildItems() + buildItems();
+
+    // Start animation once we know the width
+    requestAnimationFrame(() => {
+      const halfWidth = track.scrollWidth / 2;
+      track.style.animation = `ticker ${next5.length * 4}s linear infinite`;
+      // Inject dynamic keyframe with correct pixel value
+      const style = document.createElement('style');
+      style.textContent = `@keyframes ticker { 0% { transform:translateX(0) } 100% { transform:translateX(-${halfWidth}px) } }`;
+      document.head.appendChild(style);
+    });
+
+    document.getElementById('fixtureTicker').style.display = 'block';
+  } catch(e) {}
+})();
+</script>
 
 <!-- STATS BAR -->
 <div class="stats-bar">
