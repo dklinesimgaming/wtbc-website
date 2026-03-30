@@ -15,7 +15,7 @@
       <li><a href="#" onclick="comingSoon(event)">News</a></li>
       <li><a href="#" onclick="comingSoon(event)">Gallery</a></li>
       <li><a href="#" onclick="comingSoon(event)">Contact</a></li>
-      <li><a href="#" onclick="comingSoon(event)">History</a></li>
+      <li><a href="history.html">History</a></li>
     </ul>
   </nav>`;
 
@@ -34,7 +34,7 @@
           <li><span style="color:#555;font-size:0.9rem">News — coming soon</span></li>
           <li><span style="color:#555;font-size:0.9rem">Gallery — coming soon</span></li>
           <li><span style="color:#555;font-size:0.9rem">Contact — coming soon</span></li>
-          <li><span style="color:#555;font-size:0.9rem">Club History — coming soon</span></li>
+          <li><a href="history.html">Club History</a></li>
         </ul>
       </div>
       <div>
